@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+            
+        <br /><br />
+        
+        <main>
+            
+            <figure>
+                <figcaption>NCBI Prokaryotic Genome Annotation Process</figcaption>
+                <img src="img/annotation.png" alt="Picture of genome annotation process" />
+            </figure>
+            
+            <div class="main-content">
+                <h2>What is Genome Annotation?</h2>
+                <p>Genome Annotation is the process of identifying functional elements along the sequence of a genome.</p>
+                <p>Genome annotation consists of three main steps:</p>
+                <ol>
+                    <li>identifying portions of the genome that do not code for proteins</li>
+                    <li>identifying elements on the genome, a process called gene prediction</li>
+                    <li>attaching biological information to these elements</li>
+                </ol>
+                <p>This can be achieved using bioinformatics software with specific features including:</p>
+                <ul>
+                    <li>signal sensors</li>
+                    <li>content sensors</li>
+                    <li>similarity detection</li>
+                </ul>
+                
+                <p><a href="http://bioinf.uni-greifswald.de/webaugustus/about" target="_blank">AUGUSTUS</a> is an open source program that predicts genes in eukaryotic genomic sequences.</p>
+                <p><abbr title="National Center for Biotechnology Information">NCBI</abbr> has developed a new approach to genome annotation that combines alignment-based methods with methods of predicting protein-coding and RNA genes and other functional elements directly from sequence - <a href="https://www.ncbi.nlm.nih.gov/genome/annotation_prok/process/" target="_blank">Prokaryotic Genome Annotation Process</a>. The flowchart on the left shows the major components of the pipeline.</p>
+            </div>
+            
+        </main>
+        <%- include('partials/footer.ejs') %>
+        

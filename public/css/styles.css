@@ -1,0 +1,123 @@
+/*
+CSS file for hw4
+Author: Max Halbert
+Date: 7/20/2020
+*/
+
+html {
+    margin: 0px 15px;
+    font-size: 100%;
+}
+
+body {
+    background-color: #77BDF5;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    background-image: url(../img/dna_image.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+header, main, nav, footer {
+    text-align:center;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    padding: 10px;
+    margin: 0px;
+}
+
+nav a {    /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;    /* removes underline */
+    color: white;            /* by default, links are blue */
+}
+
+nav a:hover    {
+    border-bottom: 2px #7EF577 solid;
+    font-size: 1.5rem;
+    transition: .9s;    /* transition effect */
+}
+
+.selected-menu {
+    color: #7EF577;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-content {
+    text-align: left;
+}
+
+.main-content a {
+    color: #5B2658;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    color: brown;
+    margin: 0px 20px 0px 20px;
+}
+
+
+
+#contact {
+    color:  darkblue;
+}
+
+
+#home-video {
+    margin: 20px 20px;
+}
+
+
+abbr {
+    color: #524061;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.topics {
+    text-align: left;
+}
+
+figcaption {
+    color: #614240;
+}
+
+.reference-content {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.reference-content a {
+    margin: 10px;
+    font-size: 1rem;
+    color: #405E61;
+    text-decoration: none;
+}
+
+.reference-content a:hover {
+    color: #614240;
+    border-bottom: 2px #614240 solid;
+}

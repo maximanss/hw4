@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+<!--
+
+CST336 HW4
+Author: Max Halbert
+File: header.ejs
+Date: 7/20/2020
+Descriptions: this is the header partial for all the views file
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <title>Bioinformatics</title>
+        <meta charset = "utf-8"/> 
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    </head>
+        
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        
+        <header>
+            <h1>Bioinformatics</h1>
+        </header>
+        <hr />
+        <nav>
+        <a <% if( page_name === 'home') { %> class = "selected-menu" <% }%> href="/">Home</a>
+        <a <% if(page_name === 'dna_sequencing') {%> class = "selected-menu" <% }%> href="/dna_sequencing">DNA Sequencing</a>
+        <a <% if(page_name === 'genome_annotation') {%> class = "selected-menu" <% }%> href="/genome_annotation">Genome Annotation</a>
+        <a <% if(page_name === 'dna_profiling') {%> class = "selected-menu" <% }%> href="/dna_profiling">DNA Profiling</a>
+        <a <% if(page_name === 'reference') {%> class = "selected-menu" <% }%> href="/reference">References</a>
+        </nav>
